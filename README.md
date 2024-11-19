@@ -6,8 +6,8 @@ Save sales leads and get a filtered list of leads
 
 ### Install dependencies
 
-1. pip install -r requirements.txt
-2. Start a `postgresql server` on localhost and then populate env variables in `.env` file.
+1. Create a python virtual environment and install requirements: `pip install -r requirements.txt`.
+2. `Postgresql server` is running on Supabase cloud. Credentials added to the .env file.
 3. Run the following to start the service:
 
 ```bash
@@ -30,4 +30,6 @@ $ docker build -t fastapi-app .
 $ docker run -d -p 8080:8080 fastapi-app
 ```
 
-3. Note: if postgresql is also running on docker, then keep `DB_HOST=host.docker.internal`
+## Test the service
+
+1. Deployed on Railway app. Please visit `https://leadmanagementservice-production.up.railway.app/docs`
