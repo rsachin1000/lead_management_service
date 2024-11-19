@@ -11,7 +11,7 @@ Save sales leads and get a filtered list of leads
 3. Run the following to start the service:
 
 ```bash
-$ python main.py
+$ python app/main.py
 ```
 
-4. Use FastAPI docs service to test apis at `http://localhost:8000/docs`.
+4. Use FastAPI docs service to test apis at `http://localhost:8080/docs`.
