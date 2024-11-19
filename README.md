@@ -15,3 +15,19 @@ $ python app/main.py
 ```
 
 4. Use FastAPI docs service to test apis at `http://localhost:8080/docs`.
+
+### Run on Docker
+
+1. Build the docker image:
+
+```bash
+$ docker build -t fastapi-app .
+```
+
+2. Run the docker container:
+
+```bash
+$ docker run -d -p 8080:8080 fastapi-app
+```
+
+3. Note: if postgresql is also running on docker, then keep `DB_HOST=host.docker.internal`

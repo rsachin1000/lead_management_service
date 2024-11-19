@@ -1,8 +1,8 @@
 from typing import Generator
 from sqlalchemy.orm import Session
-from .connection import DBConfig, DatabaseConnection
-from .session import DatabaseSession
-from .data_models import Base, Lead, Salesperson
+from src.database.connection import DBConfig, DatabaseConnection
+from src.database.session import DatabaseSession
+from src.database.data_models import Base, Lead, Salesperson
 
 class Database:
     _instance = None

@@ -1,8 +1,7 @@
 from typing import Generator
 from contextlib import contextmanager
 from sqlalchemy.orm import sessionmaker, Session
-from .connection import DatabaseConnection
-
+from src.database.connection import DatabaseConnection
 
 
 class DatabaseSession:

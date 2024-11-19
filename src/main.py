@@ -4,8 +4,8 @@ import uvicorn
 from fastapi import FastAPI
 from dotenv import load_dotenv
 
-from app.apis import router
-from app.database import db, DBConfig
+from src.apis import router
+from src.database import db, DBConfig
 
 
 load_dotenv()

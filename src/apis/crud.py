@@ -6,8 +6,8 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
 from fastapi import HTTPException, UploadFile, status
 
-from app.database import Lead, Salesperson
-from .schemas import GetLeadsFilters, LeadResponse, SalespersonResponse
+from src.database import Lead, Salesperson
+from src.apis.schemas import GetLeadsFilters, LeadResponse, SalespersonResponse
 
 
 async def process_csv_data(
