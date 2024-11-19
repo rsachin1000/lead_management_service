@@ -2,9 +2,10 @@ import os
 import uvicorn
 
 from fastapi import FastAPI
-from database import db, DBConfig
 from dotenv import load_dotenv
-from apis import router
+
+from app.apis import router
+from app.database import db, DBConfig
 
 
 load_dotenv()

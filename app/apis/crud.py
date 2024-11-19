@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
 from fastapi import HTTPException, UploadFile, status
 
-from database import Lead, Salesperson
+from app.database import Lead, Salesperson
 from .schemas import GetLeadsFilters, LeadResponse, SalespersonResponse
 
 

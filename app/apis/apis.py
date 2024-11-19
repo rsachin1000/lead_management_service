@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from fastapi import APIRouter, UploadFile, Depends, HTTPException, status
 
-from database import get_db
+from app.database import get_db
 from .schemas import UploadLeadsResponse, PaginatedLeadResponse, GetLeadsFilters
 from .crud import process_csv_data, get_leads_with_filter
 
